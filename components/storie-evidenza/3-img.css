@@ -1,0 +1,44 @@
+.block-3img {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: black;
+  width: fit-content;
+  margin: 0px 0px 64px;
+  padding: 0px 16px;
+}
+
+img {
+  width: 284px;
+  height: 159px;
+  border-radius: 5px;
+}
+
+.fortnite-card {
+  max-width: 284px;
+  border-radius: 5px;
+}
+
+div > h4 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+div > p {
+  color: #929094;
+  font-size: 14px;
+  font-weight: 500px;
+}
+
+div > button {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #646366;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: lightgrey;
+}
