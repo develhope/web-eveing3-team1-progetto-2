@@ -1,0 +1,50 @@
+@media screen and (max-width: 1024px) {
+  div.game-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.tendenza-container {
+  /* background-color: grey; */
+  padding: 5px;
+  max-width: 1300px;
+  /* color: white; */
+}
+
+.title-button {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 15px 5px;
+  min-height: 30px;
+}
+.game-container {
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: nowrap;
+  gap: 5px;
+  width: 100%;
+}
+
+.card-game {
+  min-width: 50px;
+  max-width: 250px;
+
+  height: 100%;
+  margin-left: 5px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-game > .img-game {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-game > h4 {
+  margin: 8px 0;
+}
+.card-game > span {
+  margin-top: 5px;
+}
