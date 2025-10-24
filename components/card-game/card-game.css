@@ -1,0 +1,88 @@
+.card-game {
+  min-width: 50px;
+  max-width: 250px;
+  height: 100%;
+  margin-left: 5px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+}
+
+/* effetto immagine e hover */
+.img-container {
+  position: relative;
+}
+
+.img-cover {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.img-cover::after {
+  content: "+";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--background-web-page);
+  color: var(--font-text-white-color);
+  font-size: larger;
+  border: 2px solid var(--font-text-white-color);
+  border-radius: 50%;
+  padding: 0px 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-container:hover .img-cover::after,
+.img-cover:hover::after {
+  opacity: 1;
+}
+.img-game {
+  filter: brightness(100%);
+  transition: filter 0.3 ease;
+}
+.img-game:hover {
+  filter: brightness(150%);
+}
+
+/*  */
+.title-game {
+  font-size: 1.5rem;
+}
+
+/* container per il discount */
+.price-container span[title="discount"] {
+  margin: 5px;
+  font-size: 0.95em;
+  display: inline-block;
+}
+/* stili css per span class discount */
+.discount {
+  border: 1px solid var(--azure-discount-color);
+  border-radius: 20px;
+  background-color: var(--azure-discount-color);
+  color: var(--font-text-black-color);
+  height: 20px;
+  width: 60px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  position: relative;
+}
+
+.old-price::after {
+  content: "*";
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+  left: 100%;
+}

@@ -1,31 +1,39 @@
-@media screen and (max-width: 1024px) {
-  div.game-container {
-    display: flex;
-    flex-wrap: wrap;
+@media screen and (max-width: 750px) {
+  div.game-container-x5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  /* Nascondi l'ultima card-game su schermi stretti */
+  .game-container-x5 .card-game:last-child {
+    display: none;
   }
 }
 
 .tendenza-container {
-  /* background-color: grey; */
   padding: 5px;
   max-width: 1300px;
+  margin-bottom: 64px;
   /* color: white; */
 }
-
-.title-button {
+.title-trending {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.title-and-button {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 15px 5px;
+  margin: 0 0 20px 5px;
   min-height: 30px;
 }
-.game-container {
+.game-container-x5 {
   display: flex;
   flex: 0 1 auto;
   flex-wrap: nowrap;
   gap: 5px;
   width: 100%;
 }
-
+/* bozza card-game, sostituire con quella finale */
 .card-game {
   min-width: 50px;
   max-width: 250px;
