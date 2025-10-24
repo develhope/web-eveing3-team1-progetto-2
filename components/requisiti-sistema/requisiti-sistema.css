@@ -1,0 +1,61 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 30px;
+}
+
+.requisiti-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.requisiti-container h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.scheda {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 20px 25px;
+}
+
+.scheda h3 {
+  border-bottom: 2px solid #2ea7ff;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #cde9ff;
+}
+
+.requisiti {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.colonna {
+  flex: 1;
+  min-width: 250px;
+}
+
+.colonna h4 {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.colonna p {
+  font-size: 0.9rem;
+  color: #d1d1d1;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+strong {
+  color: #ffffff;
+}
