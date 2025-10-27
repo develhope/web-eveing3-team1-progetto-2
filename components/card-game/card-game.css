@@ -38,6 +38,10 @@
   opacity: 0;
   transition: opacity 0.3s ease;
 }
+.image-cover::before {
+  content: "lista dei desideri";
+  position: absolute;
+}
 
 .img-container:hover .img-cover::after,
 .img-cover:hover::after {
@@ -54,6 +58,7 @@
 /*  */
 .title-game {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 /* container per il discount */

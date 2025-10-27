@@ -43,13 +43,13 @@
   }
 }
 
-@media (max-width: 375 px) {
+@media (max-width: 375 px) /* Versione mobile */ {
   .block-3img {
     width: 258px;
     height: 352px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 768px) /* Versione tablet */ {
     .block-3img {
       width: 584 px;
       height: 489px;
