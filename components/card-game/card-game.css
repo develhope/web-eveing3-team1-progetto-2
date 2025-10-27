@@ -1,3 +1,4 @@
+/*grandezza card*/
 .card-game {
   min-width: 50px;
   max-width: 250px;
@@ -14,42 +15,75 @@
 /* effetto immagine e hover */
 .img-container {
   position: relative;
+  border-radius: 10px;
 }
 
 .img-cover {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
   border-radius: 10px;
   margin-bottom: 5px;
 }
 
-.img-cover::after {
-  content: "+";
+/* Nuovo contenitore per l'icona + e il tooltip */
+.wishlist-icon {
   position: absolute;
   top: 15px;
   right: 15px;
+  z-index: 10; /* Assicurati che sia sopra l'immagine */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+/* L'icona appare quando si fa hover sull'immagine */
+.img-cover:hover .wishlist-icon {
+  opacity: 1;
+}
+
+/* Stile dell'icona '+' */
+.icon-plus {
   background-color: var(--background-web-page);
   color: var(--font-text-white-color);
   font-size: larger;
   border: 2px solid var(--font-text-white-color);
   border-radius: 50%;
-  padding: 0px 4px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.image-cover::before {
-  content: "lista dei desideri";
-  position: absolute;
+  padding: 0px 5px;
 }
 
-.img-container:hover .img-cover::after,
-.img-cover:hover::after {
-  opacity: 1;
+/* Stile del Tooltip "Lista dei desideri" */
+.tooltip-text {
+  content: "Lista dei desideri";
+  position: absolute;
+  right: -60px;
+  top: -45px;
+  transform: translateY(-50%);
+  color: var(--font-text-white-color);
+  font-size: 15px;
+  border: 1px solid var(--background-grey-footer);
+  background-color: var(--background-grey-footer);
+  padding: 12px;
+  border-radius: 5px;
+  white-space: nowrap; /* Evita che il testo vada a capo */
+
+  /* Nascondi il tooltip per default */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 9;
 }
+
+/* Quando si fa hover sull'icona ('+'), appare il tooltip */
+.wishlist-icon:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+}
+
 .img-game {
   filter: brightness(100%);
   transition: filter 0.3 ease;
+  border-radius: 15px;
 }
 .img-game:hover {
   filter: brightness(150%);
