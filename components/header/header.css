@@ -20,7 +20,6 @@
 .logo-group {
   display: flex;
   align-items: center;
-  cursor: pointer; /* Indica che si può cliccare */
   gap: 10px;
 }
 
@@ -33,10 +32,12 @@
 }
 
 .svg-logo:hover {
+  cursor: pointer;
   filter: brightness(75%);
 }
 
 .svg-arrow {
+  cursor: pointer;
   transition: transform 0.3s ease;
 }
 .dropdown-container:hover .svg-arrow,
@@ -106,98 +107,123 @@ a:hover .arrow-down .svg-arrow {
     125%
   ); /* Un blu leggermente più scuro al passaggio del mouse */
 }
-/* ------------------------------------------------------------------ */
-/* STILI DROPDOWN MENU */
-/* ------------------------------------------------------------------ */
 
-/* Il contenitore che gestisce il :hover */
+/* Il contenitore che gestisce il :hover (nessuna modifica) */
 .dropdown-container {
-  position: relative; /* Fondamentale: rende il menu posizionabile rispetto a questo div */
+  position: relative;
 }
 
 /* Stile del menu a discesa */
 .dropdown-menu {
+  /* Posizionamento */
   position: absolute;
-  top: 45px;
+  top: 80px;
   left: -15px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent;
+  }
+  /* Aggiungiamo padding-top per creare un "ponte invisibile" tra il trigger e il menu */
+  padding-top: 40px;
+  margin-top: -40px; /* Compensiamo il padding per mantenere la posizione visiva */
+
   /* Aspetto */
+  border: 1px solid rgb(100, 98, 98);
   background-color: var(--background-grey-button);
-  width: 600px; /* Larghezza del menu come nell'immagine */
-  min-height: 450px;
-  padding: 20px 30px;
-  border-radius: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Ombra per farlo risaltare */
-  z-index: 100; /* Assicura che sia sopra gli altri contenuti */
+  width: 600px; /* Larghezza del menu */
+  min-height: 450px; /* Altezza minima per contenere tutto */
+  border-radius: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  z-index: 100;
 
   /* Layout Colonne */
   display: flex;
-  padding: 0;
+  /* Rimuoviamo il padding generale e lo mettiamo sulle colonne */
+  padding: 0px;
 
-  /* Nascondi di default */
-  opacity: 1; /* Lo rendiamo invisibile */
-  visibility: visible; /* Lo togliamo dal flusso del documento */
-  transition: opacity 0.3s ease; /* Aggiunge una transizione fluida */
+  /* Nascondi di default*/
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
 }
 
-/* RENDI VISIBILE IL MENU ALL'HOVER */
-/* Quando l'utente passa sopra il .dropdown-container, 
-   selezioniamo il .dropdown-menu e lo rendiamo visibile */
+/* RENDI VISIBILE IL MENU ALL'HOVER (nessuna modifica) */
 .dropdown-container:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
 }
 
-/* Stili per le colonne */
+/* Stili per le colonne principali (Sinistra e Destra) */
 .menu-column {
   display: flex;
   flex-direction: column;
-  flex-basis: 40%;
-  /* Distribuzione uniforme dello spazio tra le colonne */
+}
+
+/* COLONNA SINISTRA (Gioca + Scopri) */
+.left-column {
+  flex-basis: 50%; /* Un po' più stretta della destra */
+  border-right: 1px solid rgb(100, 98, 98); /* SEPARATORE VERTICALE */
+}
+
+/* COLONNA DESTRA (Crea) */
+.right-column {
+  flex-basis: 60%; /* Più larga per contenere più link */
+  padding: 30px; /* Padding diverso per lo spazio dalla linea verticale */
+}
+
+/* Le singole sezioni (Gioca, Scopri) */
+.menu-section {
+  padding: 30px; /* Padding orizzontale uniforme */
+}
+
+/* SEPARATORE ORIZZONTALE tra Gioca e Scopri */
+.play-section {
+  border-bottom: 1px solid rgb(100, 98, 98);
+  padding-bottom: 20px; /* Spazio sotto la linea */
 }
 
 /* Stile intestazione di sezione (Gioca, Crea, Scopri) */
-.dropdown-menu h4 {
+.dropdown-menu h3 {
   color: white;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 5px;
+  font-size: larger;
+  margin-top: 0;
   margin-bottom: 10px;
-  padding-bottom: 5px;
-  padding: 5px;
+  font-weight: bold; /* Le intestazioni sono in grassetto nell'immagine */
 }
 
 /* Stili per i link all'interno del menu */
 .dropdown-menu a {
-  color: var(--font-text-grey-color);
+  color: var(--font-text-white-color);
   text-decoration: none;
   font-size: 14px;
-  padding: 10px 5px;
-  display: flex; /* Per allineare l'icona e il testo */
+  padding: 10px; /* Più padding per l'area di hover */
+  margin: 2px 0;
+  display: flex;
+  align-items: center;
+  border-radius: 5px; /* Angoli leggermente arrotondati al hover */
   transition: color 0.2s, background-color 0.2s;
+  cursor: pointer; /* Aggiunge il cursore a manina solo sui link */
 }
 
 .dropdown-menu a:hover {
   color: white;
+  background-color: var(
+    --background-grey-button-hover
+  ); /* Sfondo grigio scuro al passaggio del mouse */
 }
 
-/* Stile Placeholder per Icone */
+/* 
+/* Stile per le Icone */
 .dropdown-menu a .icon {
-  font-size: 14px;
-  margin-right: 8px;
-  color: #a0a0a0; /* Colore per l'icona */
-  font-weight: bold;
-  /* Useremmo qui delle icone reali al posto della lettera */
-}
-
-/* La sezione Scopri ha bisogno di più margine in alto */
-.discover-section {
-  margin-top: 40px; /* Spostiamo la sezione Scopri più in basso */
-  border-top: 1px solid grey;
-}
-
-.logo {
-  fill: white;
-  width: 20;
-  height: 20;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  width: 15px;
+  margin-right: 15px;
 }
