@@ -1,24 +1,18 @@
 @media screen and (max-width: 768px) {
-  div.game-container-x5 {
+  div.game-container-x6 {
     display: flex;
     flex-direction: row;
   }
-  .game-container-x5 .card-game:nth-child(5),
-  .game-container-x5 .card-game:nth-child(6) {
+  .game-container-x6 .card-game:nth-child(5),
+  .game-container-x6 .card-game:nth-child(6) {
     display: none;
   }
 }
 /*applicare soltanto a tendenza container*/
 @media screen and (max-width: 375px) {
-  div.game-container-x5 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-  /* Nascondi l'ultima card-game su schermi stretti */
-  .game-container-x5 .card-game:nth-child(5),
-  .game-container-x5 .card-game:nth-child(6) {
-    display: none;
+  div.game-container-x6 {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -29,19 +23,21 @@
   /* color: white; */
 }
 .title-trending {
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 .title-and-button {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 0 20px 5px;
   min-height: 30px;
 }
-.game-container-x5 {
+.game-container-x6 {
   display: flex;
   flex: 0 1 auto;
   flex-wrap: nowrap;
   gap: 5px;
   width: 100%;
+  align-items: flex-start;
 }

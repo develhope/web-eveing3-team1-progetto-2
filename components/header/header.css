@@ -1,0 +1,203 @@
+.epic-header {
+  background-color: #1a1a1a; /* Sfondo scuro dell'header */
+  height: 80px; /* Altezza dell'header */
+  padding: 0 20px; /* Spazio ai lati */
+  width: 100%;
+  /* Usiamo Flexbox per allineare gli elementi al centro e separare sinistra/destra */
+  display: flex;
+  justify-content: space-between; /* Sposta il gruppo sinistro e destro ai lati opposti */
+  align-items: center; /* Allinea verticalmente al centro */
+}
+
+/* Gruppo sinistro (Logo e Navigazione) */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Spazio tra il gruppo logo e la navigazione */
+}
+
+/* Stile del Logo Icona */
+.logo-group {
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* Indica che si può cliccare */
+  gap: 10px;
+}
+
+.epic-icon {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--font-text-white-color);
+  display: flex;
+  align-items: center;
+}
+
+.svg-logo:hover {
+  filter: brightness(75%);
+}
+
+.svg-arrow {
+  transition: transform 0.3s ease;
+}
+.dropdown-container:hover .svg-arrow,
+a:hover .arrow-down .svg-arrow {
+  transform: rotate(180deg);
+}
+
+/* Navigazione (Assistenza, Distribuisci) */
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-nav a {
+  color: var(--font-text-white-color);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5px 0;
+  transition: color 0.2s; /* Animazione per l'hover */
+}
+
+.main-nav a:hover {
+  color: var(--font-text-grey-color);
+}
+
+/* Gruppo destro (Lingua e Pulsanti) */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Spazio tra gli elementi a destra */
+}
+.language-icon {
+  cursor: pointer;
+}
+
+/* Stile generico per tutti i pulsanti */
+.btn {
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px; /* Bordi leggermente arrotondati */
+  transition: background-color 0.2s;
+}
+
+/* Stile specifico per il pulsante ACCEDI (Grigio scuro) */
+.btn-login {
+  background-color: var(--background-grey-button);
+  color: var(--font-text-white-color);
+}
+
+.btn-login:hover {
+  background-color: var(--background-grey-button-hover);
+}
+
+/* Stile specifico per il pulsante SCARICA (Blu brillante) */
+.btn-download {
+  background-color: var(--azure-discount-color); /* Il blu di Epic Games */
+  color: black;
+}
+
+.btn-download:hover {
+  filter: brightness(
+    125%
+  ); /* Un blu leggermente più scuro al passaggio del mouse */
+}
+/* ------------------------------------------------------------------ */
+/* STILI DROPDOWN MENU */
+/* ------------------------------------------------------------------ */
+
+/* Il contenitore che gestisce il :hover */
+.dropdown-container {
+  position: relative; /* Fondamentale: rende il menu posizionabile rispetto a questo div */
+}
+
+/* Stile del menu a discesa */
+.dropdown-menu {
+  position: absolute;
+  top: 45px;
+  left: -15px;
+
+  /* Aspetto */
+  background-color: var(--background-grey-button);
+  width: 600px; /* Larghezza del menu come nell'immagine */
+  min-height: 450px;
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Ombra per farlo risaltare */
+  z-index: 100; /* Assicura che sia sopra gli altri contenuti */
+
+  /* Layout Colonne */
+  display: flex;
+  padding: 0;
+
+  /* Nascondi di default */
+  opacity: 1; /* Lo rendiamo invisibile */
+  visibility: visible; /* Lo togliamo dal flusso del documento */
+  transition: opacity 0.3s ease; /* Aggiunge una transizione fluida */
+}
+
+/* RENDI VISIBILE IL MENU ALL'HOVER */
+/* Quando l'utente passa sopra il .dropdown-container, 
+   selezioniamo il .dropdown-menu e lo rendiamo visibile */
+.dropdown-container:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Stili per le colonne */
+.menu-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  /* Distribuzione uniforme dello spazio tra le colonne */
+}
+
+/* Stile intestazione di sezione (Gioca, Crea, Scopri) */
+.dropdown-menu h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding: 5px;
+}
+
+/* Stili per i link all'interno del menu */
+.dropdown-menu a {
+  color: var(--font-text-grey-color);
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px 5px;
+  display: flex; /* Per allineare l'icona e il testo */
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.dropdown-menu a:hover {
+  color: white;
+}
+
+/* Stile Placeholder per Icone */
+.dropdown-menu a .icon {
+  font-size: 14px;
+  margin-right: 8px;
+  color: #a0a0a0; /* Colore per l'icona */
+  font-weight: bold;
+  /* Useremmo qui delle icone reali al posto della lettera */
+}
+
+/* La sezione Scopri ha bisogno di più margine in alto */
+.discover-section {
+  margin-top: 40px; /* Spostiamo la sezione Scopri più in basso */
+  border-top: 1px solid grey;
+}
+
+.logo {
+  fill: white;
+  width: 20;
+  height: 20;
+}
