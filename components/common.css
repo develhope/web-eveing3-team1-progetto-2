@@ -244,7 +244,8 @@ meter {
   --background-web-page: #101014;
   --azure-discount-color: #26bbff;
   --background-grey-container: #202024;
-  --background-grey-button: #636366;
+  --background-grey-button: #373737;
+  --background-grey-button-hover: #636366;
   --background-grey-footer: #18181c;
 }
 
