@@ -1,0 +1,68 @@
+.colonna-container {
+  display: flex;
+  background-color: var(--background-web-page);
+}
+
+.card-mini-game {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card-mini-game:hover {
+  background-color: var(--background-grey-footer);
+  cursor: pointer;
+}
+
+.card-mini-game img {
+  min-width: 30px;
+  max-width: 90px;
+  border-radius: 5px;
+}
+
+.title-price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 15px;
+}
+
+.title-column {
+  font-size: larger;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.cover-img {
+  position: relative;
+}
+
+.icon-plus {
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  border: 2px solid white;
+  color: white;
+  font-weight: bolder;
+  border-radius: 50%;
+  padding: 0 4px;
+  opacity: 0;
+  content: hidden;
+}
+.card-mini-game:hover .icon-plus {
+  opacity: 1;
+  content: visible;
+}
+
+.tooltip-text {
+  position: relative;
+  padding: 10px;
+  background-color: var(--background-grey-footer);
+  border: 1px solid var(--background-grey-footer);
+  border-radius: 5px;
+}
+
+.wishlist-icon {
+  position: relative;
+}
