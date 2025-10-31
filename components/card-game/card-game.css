@@ -10,6 +10,7 @@
   align-items: flex-start;
   gap: 10px;
   position: relative;
+  cursor: pointer;
 }
 
 /* effetto immagine e hover */
