@@ -43,7 +43,7 @@
   }
 }
 
-@media (max-width: 375 px) /* Versione mobile */ {
+@media (max-width: 375px) /* Versione mobile */ {
   .block-3img {
     width: 258px;
     height: 352px;
