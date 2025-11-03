@@ -1,0 +1,91 @@
+.colonna-container {
+  display: flex;
+  background-color: var(--background-web-page);
+}
+.colonna-singola {
+  max-width: 400px;
+  min-width: none;
+  padding: 0 20px 20px 20px;
+  border-right: 1px solid grey;
+}
+
+.card-mini-game {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card-mini-game:hover {
+  background-color: var(--background-grey-footer);
+  cursor: pointer;
+}
+
+.card-mini-game img {
+  min-width: 30px;
+  max-width: 90px;
+  border-radius: 5px;
+}
+
+.title-price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 15px;
+}
+
+.title-column {
+  font-size: larger;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.cover-img {
+  position: relative;
+}
+
+.icon-plus {
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 0 3px 0 3px;
+  opacity: 0;
+  content: hidden;
+  z-index: 1;
+}
+.card-mini-game:hover .icon-plus {
+  opacity: 1;
+  content: visible;
+}
+
+/* Stile del Tooltip "Lista dei desideri" */
+.tooltip-text {
+  content: "Lista dei desideri";
+  position: absolute;
+  right: -60px;
+  top: -30px;
+  transform: translateY(-50%);
+  color: var(--font-text-white-color);
+  font-size: 15px;
+  border: 1px solid var(--background-grey-footer);
+  background-color: var(--background-grey-footer);
+  padding: 12px;
+  border-radius: 5px;
+  white-space: nowrap; /* Evita che il testo vada a capo */
+
+  /* Nascondi il tooltip per default */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 9;
+}
+
+/* Quando si fa hover sull'icona ('+'), appare il tooltip */
+.wishlist-icon:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+}
