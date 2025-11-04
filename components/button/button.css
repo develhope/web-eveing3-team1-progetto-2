@@ -1,0 +1,252 @@
+:root {
+  --font-text-white-color: #ffffff;
+  --font-text-grey-color: #acaca8;
+  --font-text-black-color: #000000;
+  --azure-discount-color: #26bbff;
+  --background-grey-container: #202024;
+  --background-grey-button: #636366;
+  --background-grey-footer: #18181c;
+
+  /*
+  --bg-color: #656567;
+  --f-size: 16px;
+  */
+  --bg-color-hover: #555555;
+}
+
+.accedi {
+  border: 1px solid black;
+  background-color: var(--background-grey-button);
+  color: var(--font-text-white-color);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: var(--f-size);
+}
+
+.accedi:hover {
+  background-color: var(--bg-color-hover);
+}
+
+.scarica {
+  border: 1px solid black;
+  color: var(--font-text-black-color);
+  background-color: var(--azure-discount-color);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: var(--f-size);
+}
+
+.scarica:hover {
+  opacity: 0.8;
+}
+
+.negozio {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--background-grey-button);
+  color: var(--font-text-white-color);
+  font-size: var(--f-size);
+}
+
+.negozio svg {
+  fill: var(--font-text-white-color);
+  float: right;
+}
+
+.negozio:hover {
+  background-color: var(--bg-color-hover);
+}
+
+.scopri {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--background-grey-button);
+  color: #ffffff;
+  font-size: var(--f-size);
+}
+
+.scopri:hover {
+  background-color: var(--bg-color-hover);
+}
+
+.gioca-gratis {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--background-grey-button);
+  color: var(--font-text-white-color);
+  font-size: var(--f-size);
+}
+
+.gioca-gratis:hover {
+  background-color: var(--bg-color-hover);
+}
+
+.desideri {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--background-grey-button);
+  color: var(--font-text-white-color);
+  font-size: var(--f-size);
+}
+
+.desideri:hover {
+  background-color: var(--bg-color-hover);
+}
+
+.altri {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--background-grey-button);
+  color: var(--font-text-white-color);
+  font-size: var(--f-size);
+}
+
+.altri:hover {
+  background-color: var(--bg-color-hover);
+}
+
+.leggi {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--background-grey-button);
+  color: var(--font-text-white-color);
+  font-size: var(--f-size);
+}
+
+.leggi:hover {
+  background-color: var(--bg-color-hover);
+}
+
+.ora {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--background-grey-button);
+  color: var(--font-text-white-color);
+  font-size: var(--f-size);
+}
+
+.ora:hover {
+  background-color: var(--bg-color-hover);
+}
+
+.esplora {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--background-grey-button);
+  color: var(--font-text-white-color);
+  font-size: var(--f-size);
+}
+
+.esplora:hover {
+  background-color: var(--bg-color-hover);
+}
+
+.torna-su {
+  background-color: var(--background-grey-button);
+  color: var(--font-text-white-color);
+  border: 1px solid black;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.torna-su:hover {
+  background-color: var(--bg-color-hover);
+}
+
+.torna-su svg {
+  fill: var(--font-text-white-color);
+  margin-left: 8px;
+}
+
+.compra {
+  border: 1px solid black;
+  background-color: var(--azure-discount-color);
+  margin: 10px;
+  padding: 10px 90px 10px 90px;
+  border-radius: 10px;
+  font-size: var(--f-size);
+}
+
+.compra:hover {
+  opacity: 0.8;
+}
+
+.carrello {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px 90px 10px 90px;
+  background-color: var(--background-grey-button);
+  color: var(--font-text-white-color);
+  font-size: var(--f-size);
+}
+
+.carrello:hover {
+  background-color: var(--bg-color-hover);
+}
+
+.lista-desideri {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px 90px 10px 90px;
+  background-color: var(--background-grey-button);
+  color: var(--font-text-white-color);
+  font-size: var(--f-size);
+}
+
+.lista-desideri:hover {
+  background-color: var(--bg-color-hover);
+}
+
+.condividi {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px 30px 5px 30px;
+  background-color: var(--background-grey-button);
+  color: var(--font-text-white-color);
+  font-size: var(--f-size);
+}
+
+.condividi:hover {
+  background-color: lightgray;
+}
+
+.segnala {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px 30px 5px 30px;
+  background-color: var(--background-grey-button);
+  color: var(--font-text-white-color);
+  font-size: var(--f-size);
+}
+
+.segnala:hover {
+  background-color: lightgray;
+}

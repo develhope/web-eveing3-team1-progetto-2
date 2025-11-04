@@ -8,7 +8,7 @@
   padding: 0px 16px;
 }
 
-img {
+.gioco {
   width: 284px;
   height: 159px;
   border-radius: 5px;
@@ -19,26 +19,40 @@ img {
   border-radius: 5px;
 }
 
-div > h4 {
+.nome {
   color: #ffffff;
   font-weight: bold;
   font-size: 20px;
 }
 
-div > p {
+.descrizione {
   color: #929094;
   font-size: 14px;
   font-weight: 500px;
 }
 
-div > button {
+.negozio {
   border-radius: 10px;
   padding: 10px;
   background-color: #646366;
   color: #ffffff;
   font-size: 16px;
+
+  .negozio:hover {
+    background-color: lightgray;
+  }
 }
 
-button:hover {
-  background-color: lightgrey;
+@media (max-width: 375px) /* Versione mobile */ {
+  .block-3img {
+    width: 258px;
+    height: 352px;
+  }
+
+  @media (max-width: 768px) /* Versione tablet */ {
+    .block-3img {
+      width: 584 px;
+      height: 489px;
+    }
+  }
 }

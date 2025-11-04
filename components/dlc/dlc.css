@@ -1,0 +1,146 @@
+@media (max-width: 376px) {
+  .contenuto {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .cover {
+    width: 100%;
+    height: 280px;
+  }
+
+  .azioni {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .carrello,
+  .desideri {
+    width: 100%;
+    flex-grow: 0;
+    flex-basis: auto;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .prezzo {
+    margin-bottom: 15px;
+  }
+
+  .descrizione {
+    text-align: left;
+  }
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+
+  border: 1px solid #333;
+}
+
+.contenuto {
+  display: flex;
+  gap: 20px;
+}
+
+.cover {
+  width: 291px;
+  height: 163px;
+  background-color: #000000;
+  position: relative;
+  border-radius: 4px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.dettagli {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.edizione {
+  color: #aaaaaa;
+  font-size: 14px;
+  margin: 0 0 5px 0;
+  text-transform: uppercase;
+}
+
+.titolo {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+
+.descrizione {
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.prezzo {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.azioni {
+  display: flex;
+  gap: 10px;
+}
+
+.pul {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.carrello {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 50px 10px 50px;
+}
+
+.carrello:hover {
+  background-color: #0056b3;
+}
+
+.desideri {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #555555;
+  padding: 10px 50px 10px 50px;
+}
+
+.desideri:hover {
+  background-color: #555555;
+}
