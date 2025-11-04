@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f0f10;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #111;
+}
+
+.search-bar input {
+  background-color: #1a1a1a;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: #fff;
+  width: 200px;
+}
+
+.search-bar input::placeholder {
+  color: #888;
+}
+
+.nav-links a,
+.nav-right a {
+  color: #ccc;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav-links a:hover,
+.nav-right a:hover {
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.main-banner {
+  position: relative;
+  width: 70%;
+}
+
+.banner-img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  max-width: 50%;
+}
+
+.banner-text h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.banner-text span {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.banner-text h4 {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-top: 15px;
+}
+
+.banner-text p {
+  color: #bbb;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.buy-btn {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buy-btn:hover {
+  background-color: #ddd;
+}
+
+.wishlist {
+  margin-left: 15px;
+  color: #ccc;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.wishlist:hover {
+  color: #fff;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.game img {
+  width: 55px;
+  height: 55px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.game p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.game.active {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.game.active p {
+  color: #fff;
+}
+
+.game:hover {
+  background-color: #1c1c1c;
+}
