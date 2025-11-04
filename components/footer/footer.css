@@ -1,3 +1,39 @@
+@media (max-width: 769px) {
+  .link-colonne {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 376px) {
+  .colonna > ul {
+    display: none;
+  }
+
+  .link-colonne {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mezzo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .copyright {
+      max-width: fit-content;
+      padding-bottom: 20px;
+    }
+  }
+
+  .fondo-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -91,7 +127,7 @@ body {
 .mezzo-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -107,8 +143,8 @@ body {
 .torna-su {
   background-color: #333333;
   color: #ffffff;
-  border: none;
-  padding: 12px 20px;
+  border: 1px solid black;
+  padding: 6px 10px;
   border-radius: 10px;
   cursor: pointer;
   font-size: 14px;
@@ -116,6 +152,7 @@ body {
   display: flex;
   align-items: center;
   transition: background-color 0.2s;
+  height: 50px;
 }
 
 .torna-su:hover {
