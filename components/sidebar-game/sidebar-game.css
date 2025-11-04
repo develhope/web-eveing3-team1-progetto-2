@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: #121212;
   color: #e6e6e6;
   display: flex;
@@ -6,7 +6,7 @@ body {
   align-items: flex-start;
   min-height: 100vh;
   padding-top: 40px;
-}
+} */
 
 .card-gioco {
   background-color: #121212;
