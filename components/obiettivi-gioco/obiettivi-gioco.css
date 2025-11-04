@@ -42,11 +42,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* taglia i bordi se un'immagine è troppo grande */
+  overflow: hidden;
 }
 
 .icona img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* mantiene le proporzioni */
+  object-fit: contain;
+}
+
+.link-blu {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.link-blu:visited {
+  color: #1a73e8;
+}
+
+.link-blu:hover {
+  color: #1a73e8;
+  text-decoration: underline;
+}
+
+.link-blu:active {
+  color: #1a73e8;
 }

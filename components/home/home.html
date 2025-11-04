@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../common.css" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="search-bar">
+        <input type="text" placeholder="Cerca nel negozio" />
+      </div>
+      <nav class="nav-links">
+        <a href="#">Scopri</a>
+        <a href="#">Esplora</a>
+        <a href="#">Notizie</a>
+      </nav>
+      <div class="nav-right">
+        <a href="#">Lista dei desideri</a>
+        <a href="#">Carrello</a>
+      </div>
+    </header>
+    <main class="content">
+      <section class="main-banner">
+        <img
+          <source
+          media="(min-width: 1280px)"
+          srcset="
+            https://cdn2.unrealengine.com/egs-resident-evil-requiem-carousel-desktop-1920x1080-92a46db2299b.jpg?resize=1&amp;w=1280&amp;h=720&amp;quality=medium
+          "
+          data-image="https://cdn2.unrealengine.com/egs-resident-evil-requiem-carousel-desktop-1920x1080-92a46db2299b.jpg?resize=1&amp;w=1280&amp;h=720&amp;quality=medium"
+        />
+
+        <div class="banner-text">
+          <h1>RESIDENT EVIL <span>requiem</span></h1>
+          <h4>IL 9° TITOLO DELLA SERIE!</h4>
+          <p>
+            Un requiem per i defunti. Un incubo per i vivi. <br />
+            Preparati a sfuggire alla morte in un'esperienza mozzafiato che ti
+            farà rabbrividire fino al midollo.
+          </p>
+          <p class="price">69,99 €</p>
+          <div class="buttons">
+            <button class="buy-btn">Pre-acquista ora</button>
+            <a href="#" class="wishlist">+ Lista dei desideri</a>
+          </div>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="game">
+          <img src="/components/home/home-icon/fortnite.jpg" alt="Fortnite" />
+          <p>Fortnite</p>
+        </div>
+        <div class="game active">
+          <img
+            src="/components/home/home-icon/resident-evil-thumb.jpg"
+            alt="Resident Evil Requiem"
+          />
+          <p>Resident Evil: Requiem</p>
+        </div>
+        <div class="game">
+          <img
+            src="/components/home/home-icon/battlefield.jpg"
+            alt="Battlefield REDSEC"
+          />
+          <p>Battlefield REDSEC</p>
+        </div>
+        <div class="game">
+          <img src="/components/home/home-icon/easports.jpg" alt="EA Sports" />
+          <p>EA SPORTS FC™ 26</p>
+        </div>
+        <div class="game">
+          <img
+            src="/components/home/home-icon/duet.jpg"
+            alt="Duet Night Abyss"
+          />
+          <p>Duet Night Abyss</p>
+        </div>
+        <div class="game">
+          <img src="/components/home/home-icon/arc.jpg" alt="ARC Raiders" />
+          <p>ARC Raiders</p>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>
