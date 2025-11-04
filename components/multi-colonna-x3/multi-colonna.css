@@ -34,6 +34,11 @@
   padding-left: 15px;
 }
 
+.title-price > h3 {
+  color: white;
+  font-weight: bold;
+}
+
 .title-column {
   font-size: larger;
   font-weight: bold;
@@ -49,6 +54,7 @@
   top: 10px;
   left: 60px;
   border: 2px solid white;
+  background-color: black;
   color: white;
   font-weight: bold;
   border-radius: 50%;
