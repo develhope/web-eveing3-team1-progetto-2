@@ -11,6 +11,11 @@
   width: 284px;
   height: 159px;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.gioco:hover {
+  filter: brightness(150%);
 }
 
 .fortnite-card {
@@ -22,12 +27,15 @@
   color: #ffffff;
   font-weight: bold;
   font-size: 20px;
+  padding: 20px 0px 20px 0px;
+  cursor: pointer;
 }
 
 .descrizione {
   color: #929094;
   font-size: 14px;
   font-weight: 500px;
+  padding-bottom: 20px;
 }
 
 .negozio {
@@ -36,10 +44,18 @@
   background-color: #646366;
   color: #ffffff;
   font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
 
-  .negozio:hover {
-    background-color: lightgray;
-  }
+.svg {
+  float: right;
+  fill: white;
+  padding-left: 5px;
+}
+
+.negozio:hover {
+  background-color: lightgray;
 }
 
 @media (max-width: 375px) /* Versione mobile */ {
