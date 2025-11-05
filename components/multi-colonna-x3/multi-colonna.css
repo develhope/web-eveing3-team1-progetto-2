@@ -66,7 +66,7 @@ body {
   position: relative;
 }
 
-.icon-plus {
+.icon-plus-2 {
   position: absolute;
   top: 10px;
   left: 60px;
@@ -80,13 +80,13 @@ body {
   content: hidden;
   z-index: 1;
 }
-.card-mini-game:hover .icon-plus {
+.card-mini-game:hover .icon-plus-2 {
   opacity: 1;
   content: visible;
 }
 
 /* Stile del Tooltip "Lista dei desideri" */
-.tooltip-text {
+.tooltip-text-2 {
   content: "Lista dei desideri";
   position: absolute;
   right: -60px;
@@ -108,7 +108,7 @@ body {
 }
 
 /* Quando si fa hover sull'icona ('+'), appare il tooltip */
-.wishlist-icon:hover .tooltip-text {
+.hoverEffect:hover .tooltip-text-2 {
   opacity: 1;
   visibility: visible;
 }
