@@ -1,14 +1,14 @@
-body {
+/* body {
   margin: 0;
   background-color: #121212;
   font-family: Arial, sans-serif;
-}
+} */
 
 .topbar {
   display: flex;
   align-items: center;
-  background-color: #1a1a1a;
-  padding: 10px 20px;
+  background-color: var(--background-web-page);
+  padding: 20px;
 }
 
 .search-box {
@@ -45,7 +45,6 @@ body {
   color: #ccc;
   margin-right: 25px;
   font-size: 14px;
-  font-weight: bold;
 }
 
 .menu a:hover,

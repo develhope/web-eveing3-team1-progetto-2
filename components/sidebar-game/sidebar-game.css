@@ -54,7 +54,7 @@
   color: #fff;
 }
 
-button {
+.card-gioco > button {
   width: 100%;
   padding: 12px 0;
   border: none;

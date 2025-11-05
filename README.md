@@ -4,6 +4,7 @@
 
 Questa repo mette a disposizione degli studenti un esempio pratico di una repo che rispetta tutte le convenzioni spiegate durante la lezione
 
+Linguaggio HTML e CSS
 Membri:
 
 - Dario

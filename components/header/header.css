@@ -27,14 +27,13 @@
 }
 
 .epic-header {
-  background-color: #1a1a1a; /* Sfondo scuro dell'header */
-  height: 80px; /* Altezza dell'header */
-  padding: 0 20px; /* Spazio ai lati */
+  background-color: #121216;
+  height: 80px;
+  padding: 0 20px;
   width: 100%;
-  /* Usiamo Flexbox per allineare gli elementi al centro e separare sinistra/destra */
   display: flex;
-  justify-content: space-between; /* Sposta il gruppo sinistro e destro ai lati opposti */
-  align-items: center; /* Allinea verticalmente al centro */
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Gruppo sinistro (Logo e Navigazione) */
@@ -97,7 +96,7 @@ a:hover .arrow-down .svg-arrow {
 .header-right {
   display: flex;
   align-items: center;
-  gap: 10px; /* Spazio tra gli elementi a destra */
+  gap: 10px;
 }
 .language-icon {
   cursor: pointer;
@@ -110,11 +109,11 @@ a:hover .arrow-down .svg-arrow {
   font-size: 14px;
   cursor: pointer;
   font-weight: bold;
-  border-radius: 5px; /* Bordi leggermente arrotondati */
+  border-radius: 5px;
   transition: background-color 0.2s;
 }
 
-/* Stile specifico per il pulsante ACCEDI (Grigio scuro) */
+/* Stile specifico per il pulsante ACCEDI */
 .btn-login {
   background-color: var(--background-grey-button);
   color: var(--font-text-white-color);
@@ -124,19 +123,17 @@ a:hover .arrow-down .svg-arrow {
   background-color: var(--background-grey-button-hover);
 }
 
-/* Stile specifico per il pulsante SCARICA (Blu brillante) */
+/* Stile specifico per il pulsante SCARICA */
 .btn-download {
-  background-color: var(--azure-discount-color); /* Il blu di Epic Games */
+  background-color: var(--azure-discount-color);
   color: black;
 }
 
 .btn-download:hover {
-  filter: brightness(
-    125%
-  ); /* Un blu leggermente più scuro al passaggio del mouse */
+  filter: brightness(125%);
 }
 
-/* Il contenitore che gestisce il :hover (nessuna modifica) */
+/* Il contenitore che gestisce il :hover */
 .dropdown-container {
   position: relative;
 }
@@ -155,13 +152,12 @@ a:hover .arrow-down .svg-arrow {
   /* Aspetto */
   border: 1px solid rgb(100, 98, 98);
   background-color: var(--background-grey-button);
-  width: 600px; /* Larghezza del menu */
-  min-height: 450px; /* Altezza minima per contenere tutto */
+  width: 600px;
+  min-height: 450px;
   border-radius: 25px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   z-index: 100;
 
-  /* Layout Colonne */
   display: flex;
   /* Rimuoviamo il padding generale e lo mettiamo sulle colonne */
   padding: 0px;
@@ -170,6 +166,7 @@ a:hover .arrow-down .svg-arrow {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
+  /* Ponte invisibile per l'hover*/
   &::before {
     content: "";
     position: absolute;
@@ -181,7 +178,7 @@ a:hover .arrow-down .svg-arrow {
   }
 }
 
-/* RENDI VISIBILE IL MENU ALL'HOVER (nessuna modifica) */
+/* RENDI VISIBILE IL MENU ALL'HOVER */
 .dropdown-container:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
@@ -196,18 +193,18 @@ a:hover .arrow-down .svg-arrow {
 /* COLONNA SINISTRA (Gioca + Scopri) */
 .left-column {
   flex-basis: 50%; /* Un po' più stretta della destra */
-  border-right: 1px solid rgb(100, 98, 98); /* SEPARATORE VERTICALE */
+  border-right: 1px solid rgb(100, 98, 98);
 }
 
-/* COLONNA DESTRA (Crea) */
+/* COLONNA DESTRA */
 .right-column {
-  flex-basis: 60%; /* Più larga per contenere più link */
-  padding: 30px; /* Padding diverso per lo spazio dalla linea verticale */
+  flex-basis: 60%;
+  padding: 30px;
 }
 
 /* Le singole sezioni (Gioca, Scopri) */
 .menu-section {
-  padding: 30px; /* Padding orizzontale uniforme */
+  padding: 30px;
 }
 
 /* SEPARATORE ORIZZONTALE tra Gioca e Scopri */
@@ -222,7 +219,7 @@ a:hover .arrow-down .svg-arrow {
   font-size: larger;
   margin-top: 0;
   margin-bottom: 10px;
-  font-weight: bold; /* Le intestazioni sono in grassetto nell'immagine */
+  font-weight: bold;
 }
 
 /* Stili per i link all'interno del menu */
@@ -230,23 +227,20 @@ a:hover .arrow-down .svg-arrow {
   color: var(--font-text-white-color);
   text-decoration: none;
   font-size: 14px;
-  padding: 10px; /* Più padding per l'area di hover */
+  padding: 10px;
   margin: 2px 0;
   display: flex;
   align-items: center;
-  border-radius: 5px; /* Angoli leggermente arrotondati al hover */
+  border-radius: 5px;
   transition: color 0.2s, background-color 0.2s;
-  cursor: pointer; /* Aggiunge il cursore a manina solo sui link */
+  cursor: pointer;
 }
 
 .dropdown-menu a:hover {
   color: white;
-  background-color: var(
-    --background-grey-button-hover
-  ); /* Sfondo grigio scuro al passaggio del mouse */
+  background-color: var(--background-grey-button-hover);
 }
 
-/* 
 /* Stile per le Icone */
 .dropdown-menu a .icon {
   font-size: 16px;

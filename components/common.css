@@ -253,6 +253,7 @@ meter {
 
 html,
 body {
+  background-color: var(--background-web-page);
   width: 100%;
   font-family: "Inter", sans-serif;
   color: var(--font-text-grey-color);
