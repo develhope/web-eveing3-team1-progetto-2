@@ -1,5 +1,11 @@
 /* qui metti le regole del container elementi pagina web e regole della pagina web */
 
+@media screen and (max-width: 376px) {
+  body {
+    width: 100%;
+  }
+}
+
 .center-content {
   display: flex;
   flex-direction: column;

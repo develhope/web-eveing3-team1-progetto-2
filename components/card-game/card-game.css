@@ -55,7 +55,7 @@
 
 /* Stile del Tooltip "Lista dei desideri" */
 .tooltip-text {
-  content: "Lista dei desideri";
+  content: 'Lista dei desideri';
   position: absolute;
   right: -60px;
   top: -45px;
@@ -97,7 +97,7 @@
 }
 
 /* container per il discount */
-.price-container span[title="discount"] {
+.price-container span[title='discount'] {
   margin: 5px;
   font-size: 0.95em;
   display: inline-block;
@@ -120,7 +120,7 @@
 }
 
 .old-price::after {
-  content: "*";
+  content: '*';
   position: absolute;
   text-decoration: none;
   top: 0;
