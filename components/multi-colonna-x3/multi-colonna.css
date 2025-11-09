@@ -11,17 +11,13 @@
   }
 }
 
-body {
-  background-color: var(--background-web-page);
-}
-
 .colonna-container {
   display: flex;
   background-color: var(--background-web-page);
+  max-width: 1200px;
 }
 .colonna-singola {
-  max-width: 400px;
-  min-width: 300px;
+  min-width: 350px;
   padding: 0 20px 20px 20px;
   border-right: 1px solid grey;
 }
@@ -87,7 +83,7 @@ body {
 
 /* Stile del Tooltip "Lista dei desideri" */
 .tooltip-text-2 {
-  content: "Lista dei desideri";
+  content: 'Lista dei desideri';
   position: absolute;
   right: -60px;
   top: -30px;
