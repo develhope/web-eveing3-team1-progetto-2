@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   div.game-container-x6 {
     display: flex;
     flex-direction: row;
@@ -9,7 +9,7 @@
   }
 }
 /*applicare soltanto a tendenza container*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   div.game-container-x6 {
     display: flex;
     flex-direction: row;
