@@ -18,7 +18,7 @@
 
 .tendenza-container {
   padding: 5px;
-  max-width: 1200px;
+  max-width: 1000px;
   margin-bottom: 64px;
   /* color: white; */
 }
@@ -48,6 +48,7 @@
   color: white;
   padding: 8px;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .freccette1 {
