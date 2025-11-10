@@ -1,4 +1,4 @@
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .main-nav,
   .main-nav a,
   .main-nav div,
@@ -168,7 +168,7 @@ a:hover .arrow-down .svg-arrow {
   transition: opacity 0.3s ease;
   /* Ponte invisibile per l'hover*/
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: -20px;
     left: 0;
@@ -269,7 +269,7 @@ a:hover .arrow-down .svg-arrow {
   z-index: 100;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: -20px;
     left: 0;

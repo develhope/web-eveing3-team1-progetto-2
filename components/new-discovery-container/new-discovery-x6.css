@@ -18,7 +18,7 @@
 
 .tendenza-container {
   padding: 5px;
-  max-width: 1300px;
+  max-width: 1200px;
   margin-bottom: 64px;
   /* color: white; */
 }
@@ -40,4 +40,21 @@
   gap: 5px;
   width: 100%;
   align-items: flex-start;
+}
+
+.freccette {
+  border: 1px solid var(--background-grey-button);
+  background-color: var(--background-grey-button);
+  color: white;
+  padding: 8px;
+  border-radius: 100%;
+}
+
+.freccette1 {
+  transform: scaleX(-1);
+  color: grey;
+}
+
+.freccette2:hover {
+  background-color: var(--background-grey-button-hover);
 }

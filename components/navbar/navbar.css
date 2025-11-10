@@ -1,14 +1,21 @@
-/* body {
-  margin: 0;
-  background-color: #121212;
-  font-family: Arial, sans-serif;
-} */
-
 .topbar {
+  /* make the navbar stick to the top while scrolling */
+  position: sticky;
+  top: 0;
+  z-index: 99;
+
   display: flex;
   align-items: center;
   background-color: var(--background-web-page);
   padding: 20px;
+
+  /* keep it centered and responsive */
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+
+  /* subtle separation from content when stuck */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
 }
 
 .search-box {
@@ -17,7 +24,8 @@
   background-color: #2a2a2a;
   border-radius: 20px;
   padding: 8px 12px;
-  width: 200px;
+  width: 250px;
+  height: 40px;
   margin-right: 30px;
 }
 

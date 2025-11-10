@@ -103,13 +103,15 @@
 }
 
 .altri {
-  border: 1px solid black;
+  border: 1px solid grey;
+  font-weight: bold;
   border-radius: 10px;
   margin: 10px;
-  padding: 10px;
-  background-color: var(--background-grey-button);
+  padding: 12px;
+  background-color: var(--background-web-page);
   color: var(--font-text-white-color);
-  font-size: var(--f-size);
+  font-size: 13px;
+  cursor: pointer;
 }
 
 .altri:hover {
