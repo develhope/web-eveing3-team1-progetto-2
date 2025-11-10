@@ -8,12 +8,8 @@
   .media-main,
   .thumbnail-gallery,
   .main-content {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .main-content-wrapper {
-    order: 1;
+    max-width: 350px;
+    max-height: 100px;
   }
 }
 
