@@ -29,6 +29,10 @@
   text-overflow: ellipsis;
 }
 
+.card a {
+  text-align: end;
+}
+
 .icona {
   width: 70px;
   height: 70px;
