@@ -60,14 +60,10 @@
 
 @media (max-width: 376px) /* Versione mobile */ {
   .block-3img {
-    width: 258px;
-    height: 352px;
-  }
-
-  @media (max-width: 769px) /* Versione tablet */ {
-    .block-3img {
-      width: 584 px;
-      height: 489px;
-    }
+    /* max-width: 376px; */
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+    overflow-x: auto;
   }
 }

@@ -8,17 +8,19 @@
   .colonna-container {
     display: flex;
     flex-wrap: nowrap;
+    width: 100vw;
+    overflow-x: auto;
   }
 }
 
 .colonna-container {
   display: flex;
   background-color: var(--background-web-page);
-  /* max-width: 1200px; */
+  max-width: 1200px;
   margin-bottom: 40px;
 }
 .colonna-singola {
-  min-width: 60px;
+  min-width: 250px;
   padding: 0 20px 20px 20px;
   border-right: 1px solid grey;
 }
