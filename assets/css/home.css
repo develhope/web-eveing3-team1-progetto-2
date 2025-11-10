@@ -1,8 +1,5 @@
 /* qui metti le regole del container elementi pagina web e regole della pagina web */
 
-@media screen and (max-width: 769px) {
-}
-
 @media screen and (max-width: 376px) {
   .center-content {
     width: 100%;
@@ -34,5 +31,4 @@ video {
 .container {
   width: 100%; /* Occupa tutta la larghezza disponibile */
   padding: 0 10px; /* Aggiungi un piccolo padding laterale per evitare che il contenuto tocchi i bordi */
-  /* box-sizing: border-box; */
 }
