@@ -1,8 +1,9 @@
 /* qui metti le regole del container elementi pagina web e regole della pagina web */
 
 @media screen and (max-width: 376px) {
-  body {
+  .center-content {
     width: 100%;
+    max-width: none;
   }
 }
 
@@ -12,4 +13,24 @@
   align-items: center;
   max-width: 1300px;
   margin: 0 auto;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100vh; /* Assicura che la pagina copra almeno tutta l'altezza del viewport */
+  margin: 0;
+  padding: 0;
+}
+/* Impedisce alle immagini di uscire dallo schermo */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Assicurati che i tuoi contenitori principali si adattino */
+.container {
+  width: 100%; /* Occupa tutta la larghezza disponibile */
+  padding: 0 10px; /* Aggiungi un piccolo padding laterale per evitare che il contenuto tocchi i bordi */
+  /* box-sizing: border-box; */
 }
